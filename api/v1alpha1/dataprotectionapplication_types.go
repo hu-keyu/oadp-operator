@@ -795,6 +795,7 @@ type DataProtectionApplicationSpec struct {
 	// +optional
 	// +kubebuilder:validation:Deprecated
 	// +kubebuilder:validation:DeprecatedReason="Use PodConfig instead"
+	// +kubebuilder:validation:DeprecatedReplacement=spec.configuration.velero.podConfig.annotations
 	PodAnnotations map[string]string `json:"podAnnotations,omitempty"`
 	// podDnsPolicy defines how a pod's DNS will be configured.
 	// https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
